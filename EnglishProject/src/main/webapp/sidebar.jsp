@@ -152,10 +152,11 @@
                     </a>
                 </li>
                 <li>
-				    <form action="logout" method="post" style="display:inline;">
-				        <button type="submit" class="nav-item">
+				    <form action="logout" method="post" target="_top" style="display:inline;">
+				        <button type="submit" class="nav-item" 
+				                style="background:none; border:none; width:100%; text-align:left; cursor:pointer;">
 				            <i class="ri-logout-box-line menu-icon"></i>
-				            <span class="menu-text">Đăng xuất</span>
+				            <span class="menu-text">LOGOUT</span>
 				        </button>
 				    </form>
 				</li>
