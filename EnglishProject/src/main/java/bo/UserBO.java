@@ -185,4 +185,11 @@ public class UserBO {
                 return false;
         }
     }
+    
+    public boolean changePassword(String email, String currentPassword, String newPassword) throws SQLException {
+        if (!validateUser(email, currentPassword)) {
+            return false;
+        }
+        return userDAO.updatePassword(email, newPassword);
+    }
 }

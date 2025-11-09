@@ -152,11 +152,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="more.jsp" target="rightFrame" class="nav-item">
-                        <i class="ri-settings-4-line menu-icon"></i>
-                        <span class="menu-text">MORE</span>
-                    </a>
-                </li>
+				    <form action="logout" method="post" style="display:inline;">
+				        <button type="submit" class="nav-item">
+				            <i class="ri-logout-box-line menu-icon"></i>
+				            <span class="menu-text">Đăng xuất</span>
+				        </button>
+				    </form>
+				</li>
             </ul>
         </nav>
     </div>

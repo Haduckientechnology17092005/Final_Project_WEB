@@ -18,6 +18,8 @@ public class LoginDAO {
                 user.setId(rs.getInt("id"));
                 user.setEmail(rs.getString("email"));
                 user.setRole(rs.getString("role"));
+                user.setEmailVerified(rs.getBoolean("email_verified"));
+                System.out.println(user);
                 return user;
             }
         } catch (SQLException e) {

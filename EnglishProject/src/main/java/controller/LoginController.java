@@ -59,6 +59,7 @@ public class LoginController extends HttpServlet {
             session.setAttribute("user", user);
             session.setAttribute("email", user.getEmail());
             session.setAttribute("userId", user.getId());
+            session.setAttribute("username", user.getUsername());
             
             // Increment active sessions counter
             Integer activeSessions = (Integer) session.getServletContext().getAttribute("activeSessions");
