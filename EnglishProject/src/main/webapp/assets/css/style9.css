@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.university{
+    margin-left: 10px;
+}
+h1{
+    color: #0473b3;
+    font-size: 25px;
+}
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.date{
+    color: #4e4e4e;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 0;
+}
+.content-item{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+
+p{
+    margin: 10px 0;
+}
+
+.itext{
+    font-size: 16px;
+    font-weight: bold; /* In đậm */
+            text-decoration: underline; /* Gạch chân */
+}

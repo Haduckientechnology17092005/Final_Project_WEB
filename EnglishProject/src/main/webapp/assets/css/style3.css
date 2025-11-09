@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #075794;
+    color: white;
+}
+
+header .wd-center .wd-top-header {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+header .wd-center .wd-top-header .wd-top-left ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header .wd-center .wd-top-header .wd-top-left ul li {
+    margin-right: 10px;
+}
+
+header .wd-center .wd-top-header .wd-top-left .container {
+
+    max-width: 1200px;
+    margin: 0px auto;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+.container .wd-header-content .wd-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.container .wd-header-content .wd-content-right .wd-input{
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.container .wd-header-content .wd-content-right .wd-input input{
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+.container .wd-header-content .wd-content-right .wd-input i:hover{
+    color:aqua;
+}
+.container .wd-header-content .wd-navigation ul {
+    display: flex;
+}
+
+.container .wd-header-content .wd-navigation .menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    list-style: none;
+}
+
+.container .wd-header-content .wd-navigation .menu  {
+    position: relative;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.container .wd-header-content .wd-navigation .menu a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #363636;
+    font-weight: 600;
+}
+.container .wd-header-content .wd-navigation .menu .menu-item {
+    padding: 10px 5px;
+}
+.container .wd-header-content .wd-navigation .menu .menu-item:hover .submenu {
+   opacity: 1;
+    
+}
+.container .wd-header-content .wd-navigation .menu .menu-item:hover{
+    border-bottom: 4px solid #075794;
+}
+
+.container .wd-header-content .wd-navigation .menu .menu-item .submenu {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-5px,15px);
+    /* Ẩn submenu mặc định */
+    position: absolute;
+    
+    z-index: 1000;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    
+
+}
+.container .wd-header-content .wd-navigation .menu .menu-item .submenu li a{
+    font-size: 15px;
+    font-weight: normal
+    
+}
+.container .wd-header-content .wd-navigation .menu .menu-item .submenu li {
+    list-style: none;
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+.container .wd-header-content .wd-navigation .menu .menu-item .submenu li:last-child {
+    border-bottom: none;
+}
+.container .wd-header-content .wd-breadcumb{
+    background-color: #e8e8e8;
+    border-radius: 2px;
+    padding: 10px 20px;
+}
+.container .wd-slide-banner .flexslider .slides li a img{
+    width: 100%;
+    
+}
+.container .wd-slide-banner .flexslider ol{
+    display: none;
+}
+.flex-direction-nav {
+    display: none;
+}
+.wd-breadcumb .kcntt{
+    color: #106cb2;
+    opacity: 0;
+    cursor: pointer;
+}
+.container .Main{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+}
+.container .Main .MainLeft .MainTopLeft {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container .Main .MainLeft .MainTopLeft .title {
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: #106cb2;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.container .Main .MainLeft .MainTopLeft ul {
+    margin: 0;
+    list-style-type: none;
+    width: 100%;
+}
+.container .Main .MainLeft .MainTopLeft .list a{
+    text-decoration: none;
+    color: black;
+}
+.container .Main .MainLeft .MainTopLeft .list li:hover {
+    cursor: pointer;
+    background-color: #075794;
+}
+.container .Main .MainLeft .MainTopLeft .list li {
+    
+    padding: 10px 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.container .Main .MainLeft .MainTopLeft .list li:last-child {
+    border-bottom: none;
+}
+
+
+.container .Main .MainLeft .MainBottomLeft {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.container .Main .MainLeft .MainBottomLeft p{
+    margin: 10px 0;
+}
+.container .Main .MainLeft .MainBottomLeft .contact-title {
+    font-size: 16px;
+    color: #106cb2;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    
+
+}
+
+.container .Main .MainLeft .MainBottomLeft .department {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.container .Main .MainLeft .MainBottomLeft .website{
+    display: flex;
+}
+.container .Main .MainLeft .MainBottomLeft .contact-container p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.container .Main .MainBottomLeft .icon {
+    margin-right: 5px; /* Khoảng cách giữa icon và văn bản */
+}
+
+.container .Main .MainLeft .MainBottomLeft .website a {
+    color:#106cb2;
+    text-decoration: none;
+}
+
+.container .Main .MainLeft .MainBottomLeft .website a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+    .container .Main .MainCenter .post {
+        flex-direction: column;
+    }
+
+    .container .Main .MainCenter .date {
+        margin-bottom: 10px;
+    }
+}
+.container .Main .FrameContent {
+    margin-left: 10px;
+    border: 1px solid rgba(0,0,0,0.05);
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+
+footer {
+    background-color: #075794;
+    color: white;
+}
+
+.wd-footer-container-home {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding-top: 10px;
+
+}
+
+.wd-top-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.wd-block-info-company ul {
+    list-style: none;
+}
+
+.wd-block-info-company h3 {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed gray;
+}
+
+.wd-block-info-company ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.wd-block-info-company .wd-social li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.wd-footer {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .wd-top-footer {
+        flex-direction: column;
+        /* Đổi sang chiều dọc */
+    }
+}
