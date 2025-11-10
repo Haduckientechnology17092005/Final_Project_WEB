@@ -317,7 +317,8 @@
                         </div>
                         <div>
                             <% if (vocab.getAudioUrl() != null && !vocab.getAudioUrl().isEmpty()) { %>
-                                <button class="audio-btn" onclick="playAudio('<%= vocab.getAudioUrl() %>')">▶️</button>
+                                <button class="audio-btn" onclick='playAudio("<%= request.getContextPath() + "/" + vocab.getAudioUrl() %>")'>▶️</button>
+
                             <% } else { %>
                                 <span style="color: #7f8c8d;">N/A</span>
                             <% } %>

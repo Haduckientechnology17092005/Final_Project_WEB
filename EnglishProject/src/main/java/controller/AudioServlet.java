@@ -20,7 +20,8 @@ public class AudioServlet extends HttpServlet {
         System.out.println("DEBUG: AudioServlet - init() called - Servlet is being loaded");
         
         // Use absolute path to the audio folder
-        audioFolder = "C:/Users/LAPTOP T&T/eclipse-workspace/EnglishProject/src/main/webapp/audio";
+//        audioFolder = "D:\\Studying\\HK5\\web_technology(2)\\BaiTapCuoiKhoaCNWeb\\BaiTapCuoiKhoaCNWeb\\EnglishProject\\src\\main\\webapp\\audio";
+        audioFolder = getServletContext().getRealPath("/audio");
         System.out.println("DEBUG: AudioServlet - Audio folder: " + audioFolder);
         
         // Verify folder exists
